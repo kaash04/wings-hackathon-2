@@ -1,16 +1,14 @@
 import Button from '@mui/material/Button';
-import LoginForm from './LoginForm';
 import RegisterForm from './RegisterForm';
 import { HashLink } from 'react-router-hash-link';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function Register() {
   return (
     <>
       <div className='Login'>
         <div className='upperButton'>
-          <HashLink to='/login'><Button variant='outlined' color='error' sx={{ width: '50%', borderRadius: 0, height: '5rem', fontSize: '1.5rem', borderTop: 'none', borderRight: 'none', borderLeft: 'none' }}>Login</Button></HashLink>
-          <HashLink to='/register'><Button variant='outlined' color='error' sx={{ width: '50%', borderRadius: 0, height: '5rem', fontSize: '1.5rem', borderTop: 'none', borderRight: 'none' }}>Register</Button></HashLink>
+          <HashLink to='/login'><Button variant='outlined' sx={{ width: '50%', borderRadius: 0, height: '5rem', fontSize: '1.5rem', borderTop: 'none', borderRight: 'none', borderColor: 'rgba(127, 121, 121, 0.5)', borderLeft: 'none' }}>Login</Button></HashLink>
+          <HashLink to='/register'><Button variant='outlined' sx={{ width: '50%', borderRadius: 0, height: '5rem', fontSize: '1.5rem', borderTop: 'none', borderColor: 'rgba(127, 121, 121, 0.5)', borderRight: 'none' }}>Register</Button></HashLink>
         </div>
         <div className="loginField">
           <RegisterForm/>
