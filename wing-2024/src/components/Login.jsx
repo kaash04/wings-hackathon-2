@@ -1,17 +1,22 @@
-import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import LoginForm from './LoginForm';
+import RegisterForm from './RegisterForm';
 
-function Login() { 
+function Login() {
   return (
-  <>
-  <h1>Login</h1>    
-  <div className='Login'>
-        <TextField id="projId" label="Project ID" variant="outlined" />
-        <TextField id="projName" label="Project Name" variant="outlined" />
+    <>
+      <div className='Login'>
+        <div className='upperButton'>
+          <Button variant='outlined' color='error' sx={{width: '50%', borderRadius: 0, height: '5rem', fontSize: '1.5rem', borderTop: 'none', borderRight: 'none', borderLeft: 'none'}}>Login</Button>
+          <Button variant='outlined' color='error' sx={{width: '50%', borderRadius: 0, height: '5rem', fontSize: '1.5rem', borderTop: 'none', borderRight: 'none'}}>Register</Button>
+        </div>
+        <div className="loginField">
+          {/* <LoginForm/> */}
+          <RegisterForm/>
+        </div>
         
-        <Button variant="outlined">Submit</Button>
-    </div>
-  </>
+      </div>
+    </>
   )
 }
 export default Login
