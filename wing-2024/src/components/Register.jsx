@@ -4,7 +4,7 @@ import RegisterForm from './RegisterForm';
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function Login() {
+function Register() {
   return (
     <>
       <div className='Login'>
@@ -13,11 +13,11 @@ function Login() {
           <HashLink to='/register'><Button variant='outlined' color='error' sx={{ width: '50%', borderRadius: 0, height: '5rem', fontSize: '1.5rem', borderTop: 'none', borderRight: 'none' }}>Register</Button></HashLink>
         </div>
         <div className="loginField">
-          <LoginForm/>
+          <RegisterForm/>
         </div>
 
       </div>
     </>
   )
 }
-export default Login
+export default Register
